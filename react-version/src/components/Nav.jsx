@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { navItems } from '../data.js';
-import profileImg from '../assets/profile.svg';
-// Swap to './assets/profile.jpg' once you've dropped your photo in.
+import profileImg from '../assets/profile.jpg';
 
 export default function Nav() {
   const [open, setOpen] = useState(false);

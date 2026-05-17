@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { stats } from '../data.js';
-import profileImg from '../assets/profile.svg';
-// Swap the import to './assets/profile.jpg' once you've dropped your photo in.
+import profileImg from '../assets/profile.jpg';
 
 export default function Hero() {
   return (
