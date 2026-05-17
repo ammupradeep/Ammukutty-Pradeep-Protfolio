@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="hero-text">
           <p className="eyebrow">Well, hi there.</p>
           <h1>
-            I'm <span className="accent">Ammu Kutty Pradeep</span>.
+            I'm <span className="accent">Ammukutty Pradeep</span>.
           </h1>
           <p className="lead">
             I'm a PHP &amp; WordPress developer with <strong>3+ years</strong> of
@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
         <div className="hero-image-wrap">
           <div className="hero-image-frame">
-            <img src={profileImg} alt="Portrait of Ammu Kutty Pradeep" />
+            <img src={profileImg} alt="Portrait of Ammukutty Pradeep" />
           </div>
           <div className="floating-chip chip-1">PHP</div>
           <div className="floating-chip chip-2">WordPress</div>

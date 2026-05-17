@@ -23,8 +23,8 @@ export default function Nav() {
     <header className="site-header">
       <nav className="nav container">
         <NavLink to="/" end className="brand">
-          <img src={profileImg} alt="Ammu Kutty" className="brand-avatar" />
-          <span>Ammu Kutty</span>
+          <img src={profileImg} alt="Ammukutty" className="brand-avatar" />
+          <span>Ammukutty</span>
         </NavLink>
         <button
           className="nav-toggle"

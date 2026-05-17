@@ -69,4 +69,4 @@ Home · About · Skills · WordPress · AI Workflow · Projects · Contact
 
 ## Contact
 
-Email: [ammukutty@mozilor.com](mailto:ammukutty@mozilor.com)
+Email: [ammukuttypradeep01@gmail.com](mailto:ammukuttypradeep01@gmail.com)
