@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1ece3"/>
+      <stop offset="100%" stop-color="#e6e1d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg)"/>
+  <circle cx="150" cy="150" r="60" fill="#c2410c" opacity="0.18"/>
+  <circle cx="150" cy="150" r="55" fill="#c2410c" opacity="0.3"/>
+  <rect x="60" y="230" width="180" height="140" rx="90" fill="#c2410c" opacity="0.22"/>
+  <text x="150" y="385" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#5b6072">
+    Drop your photo at src/assets/profile.jpg
+  </text>
+</svg>

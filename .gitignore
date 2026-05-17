@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Editor / tooling caches
+.claude/
+.vscode/
+.idea/
+
+# Node / Vite
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.*
+
+# Other portfolio variant (kept locally only)
+html-version/
