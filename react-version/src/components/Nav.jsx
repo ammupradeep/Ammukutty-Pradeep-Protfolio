@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { navItems } from '../data.js';
 import profileImg from '../assets/profile.svg';
-// To use your real photo: place src/assets/profile.jpg and change the import above to './assets/profile.jpg'
+// Swap to './assets/profile.jpg' once you've dropped your photo in.
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const onResize = () => window.innerWidth > 860 && setOpen(false);
@@ -12,13 +14,18 @@ export default function Nav() {
     return () => window.removeEventListener('resize', onResize);
   }, []);
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
   return (
     <header className="site-header">
       <nav className="nav container">
-        <a href="#home" className="brand">
+        <NavLink to="/" end className="brand">
           <img src={profileImg} alt="Ammu Kutty" className="brand-avatar" />
           <span>Ammu Kutty</span>
-        </a>
+        </NavLink>
         <button
           className="nav-toggle"
           aria-label="Toggle navigation"
@@ -29,10 +36,14 @@ export default function Nav() {
         </button>
         <ul className={`nav-links ${open ? 'open' : ''}`}>
           {navItems.map((n) => (
-            <li key={n.href}>
-              <a href={n.href} onClick={() => setOpen(false)}>
+            <li key={n.to}>
+              <NavLink
+                to={n.to}
+                end={n.end}
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
                 {n.label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>

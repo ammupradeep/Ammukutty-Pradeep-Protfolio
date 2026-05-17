@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { stats } from '../data.js';
 import profileImg from '../assets/profile.svg';
 // Swap the import to './assets/profile.jpg' once you've dropped your photo in.
@@ -18,8 +19,8 @@ export default function Hero() {
             heavily on AI platforms to move faster every day.
           </p>
           <div className="hero-cta">
-            <a href="#projects" className="btn btn-primary">See my work</a>
-            <a href="#contact" className="btn btn-ghost">Get in touch</a>
+            <Link to="/projects" className="btn btn-primary">See my work</Link>
+            <Link to="/contact" className="btn btn-ghost">Get in touch</Link>
           </div>
           <ul className="hero-stats">
             {stats.map((s) => (

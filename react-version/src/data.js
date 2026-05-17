@@ -1,11 +1,11 @@
 export const navItems = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#wordpress', label: 'WordPress' },
-  { href: '#ai-tools', label: 'AI Workflow' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' }
+  { to: '/', label: 'Home', end: true },
+  { to: '/about', label: 'About' },
+  { to: '/skills', label: 'Skills' },
+  { to: '/wordpress', label: 'WordPress' },
+  { to: '/ai-workflow', label: 'AI Workflow' },
+  { to: '/projects', label: 'Projects' },
+  { to: '/contact', label: 'Contact' }
 ];
 
 export const stats = [

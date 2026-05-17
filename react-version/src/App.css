@@ -47,7 +47,7 @@ p { margin: 0 0 1em; }
 
 .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
 
-.section { padding: 5rem 0; border-top: 1px solid var(--border); }
+.section { padding: 5rem 0; min-height: calc(100vh - 70px - 60px); }
 .section-eyebrow,
 .eyebrow {
   text-transform: uppercase;
@@ -131,6 +131,8 @@ p { margin: 0 0 1em; }
 }
 .nav-links a:hover { color: var(--text); }
 .nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--text); }
+.nav-links a.active::after { width: 100%; }
 
 .nav-toggle {
   display: none;
